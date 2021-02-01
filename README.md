@@ -3,13 +3,18 @@
 
 Содержание:
 - [Описание программы](#описание-программы)
-  - [Environment](#Environment)
+  - [Прототип Figma](#прототип-figma)
+  - [Environment](#environment)
 - [История релизов](#история-релизов)
     - [0.1.0](#0.1.0)
 
 # Описание программы
 
 Чат. В приложении можно зарегистрироваться или авторизоваться. Реализована валидация.
+
+## Прототип Figma
+
+https://www.figma.com/file/CA7wA3xpoIsKt4jieXv2QL/Yandex-Chat?node-id=0%3A1
 
 ## Environment
 
