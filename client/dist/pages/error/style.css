@@ -1,0 +1,24 @@
+@import url('/assets/app.css');
+
+.error-not-found-image {
+    display: flex;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 56px;
+
+    filter: grayscale(75%);
+}
+
+.livechat-image {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+
+    filter: grayscale(75%);
+}
+
+.return-back {
+    text-align: center;
+    margin-top: 5%;
+}

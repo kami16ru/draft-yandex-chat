@@ -15,11 +15,11 @@ app.get('/', function(req, res){
 });
 
 app.get('/404', function(req, res){
-  res.sendFile(path.join(clientPath, '/error/404.html'));
+  res.sendFile(path.join(clientPath, '/pages/error/404.html'));
 });
 
 app.get('/500', function(req, res){
-  res.sendFile(path.join(clientPath, '/error/500.html'));
+  res.sendFile(path.join(clientPath, '/pages/error/500.html'));
 });
 
 // Error handlers
