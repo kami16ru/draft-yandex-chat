@@ -12,14 +12,19 @@ app.use(express.static(clientPath));
 
 app.get('/', function(req, res){
   res.sendFile(path.join(clientPath, '/index.html'));
+  // res.redirect('login');
 });
 
-app.get('/404', function(req, res){
+app.get('*/404', function(req, res){
   res.sendFile(path.join(clientPath, '/pages/error/404.html'));
 });
 
 app.get('/500', function(req, res){
   res.sendFile(path.join(clientPath, '/pages/error/500.html'));
+});
+
+app.get('/login', function(req, res){
+  res.sendFile(path.join(clientPath, '/pages/auth/login.html'));
 });
 
 // Error handlers

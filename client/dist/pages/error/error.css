@@ -10,15 +10,8 @@
     filter: grayscale(75%);
 }
 
-.livechat-image {
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-
-    filter: grayscale(75%);
-}
-
 .return-back {
     text-align: center;
     margin-top: 5%;
+    color: var(--primary);
 }
