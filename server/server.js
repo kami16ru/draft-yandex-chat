@@ -27,6 +27,10 @@ app.get('/login', function(req, res){
   res.sendFile(path.join(clientPath, '/pages/auth/login.html'));
 });
 
+app.get('/register', function(req, res){
+  res.sendFile(path.join(clientPath, '/pages/auth/register.html'));
+});
+
 // Error handlers
 
 app.use(function(req, res, next){

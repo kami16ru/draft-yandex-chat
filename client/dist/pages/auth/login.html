@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Yandex chat app | Login</title>
+    <title>Yandex chat app | Вход в систему</title>
 
     <link rel="stylesheet" href="/pages/auth/auth.css">
 </head>
@@ -18,8 +18,8 @@
                         <div class="input-group">
                             <label class="input-underlined">
                                 <input required id="email" name="email">
-                                <span class="input-label">Логин</span>
-                                <span class="input-helper">Имя пользователя</span>
+                                <span class="input-label">Email</span>
+                                <span class="input-helper">Email пользователя</span>
                             </label>
                         </div>
 
@@ -37,8 +37,8 @@
                     <button class="btn primary submit" onclick="submitLoginForm()">Авторизоваться</button>
                     <img class="loading" style="display: none" src="/images/loading.gif" alt="loading" height="40px">
 
-                    <button class="btn-outline" onclick="redirectToSignUp()">
-                        <span class="accent">Нет аккаунта?</span>
+                    <button class="btn-outline">
+                        <a class="accent" href="/register">Нет аккаунта?</a>
                     </button>
                 </div>
             </div>

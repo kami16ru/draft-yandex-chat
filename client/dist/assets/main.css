@@ -7,4 +7,5 @@ a {
     /* identical to box height, or 100% */
 
     color: var(--secondary);
+    text-decoration: none;
 }
