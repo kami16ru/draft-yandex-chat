@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Yandex chat app | Вход в систему</title>
+
+    <link rel="stylesheet" href="/pages/profile/profile.css">
+</head>
+<body class="bg-success">
+<main>
+    <div class="navigation-drawer">
+        <ul class="nav-menu">
+            <li>
+                <a href="/">
+                    <span class="mdi mdi-home h1 primary"></span>
+                    <span class="nav-menu-title primary" hidden>На главную</span>
+                </a>
+            </li>
+            <li>
+                <a href="/chat">
+                    <span class="mdi mdi-forum-outline h1 primary"></span>
+                    <span class="nav-menu-title primary" hidden>Чат</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <span class="mdi mdi-exit-run h1 primary"></span>
+                    <span class="nav-menu-title primary" hidden>Выход</span>
+                </a>
+            </li>
+        </ul>
+        <span
+                class="mdi mdi-arrow-left-circle close-nav white display-4"
+                onclick="navCollapsed ? openNav() : closeNav()"
+        ></span>
+    </div>
+    <div class="container">
+        <img id="avatar" src="/images/avatar_default.png" alt="аватар" onmouseover="showEditImg()">
+        <img id="avatar-change"  src="/images/avatar_change.png" alt="аватар" onmouseleave="hideEditImg()" hidden>
+
+        <div class="break"></div>
+
+        <div class="card profile-card bg-primary accent">
+            <form id="profile-form" class="form">
+                <div class="form-title h3">Профайл</div>
+
+                <div class="input-group">
+                    <label class="input-readonly">
+                        <input required id="email" name="email" maxlength="100" value="email@example.com" readonly>
+                        <span class="input-label">Почта</span>
+                    </label>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-readonly">
+                        <input required id="login" name="login" maxlength="20" readonly>
+                        <span class="input-label">Логин</span>
+                    </label>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-readonly">
+                        <input required id="fname" name="fname" maxlength="35" readonly>
+                        <span class="input-label">Имя</span>
+                    </label>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-readonly">
+                        <input required id="sname" name="sname" maxlength="35" readonly>
+                        <span class="input-label">Фамилия</span>
+                    </label>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-readonly">
+                        <input required id="nickname" name="nickname" maxlength="20" readonly>
+                        <span class="input-label">Имя в чате</span>
+                    </label>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-readonly">
+                        <input required id="phone" name="phone" maxlength="11" readonly>
+                        <span class="input-label">Телефон</span>
+                    </label>
+                </div>
+            </form>
+
+            <div class="spacer"></div>
+
+            <div class="btn-group-row">
+                <a class="btn primary" href="/profile/edit">Изменить данные</a>
+                <a class="btn secondary" href="/profile/edit/password">Изменить пароль</a>
+                <button class="btn danger" onclick="logout()">Выйти</button>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="/pages/profile/index.js"></script>
+</body>
+</html>

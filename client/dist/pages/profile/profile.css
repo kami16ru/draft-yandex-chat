@@ -1,0 +1,74 @@
+@import url('/assets/app.css');
+
+body {
+    background-image: url('/images/profile.png') !important;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.profile-card {
+    width: 50%;
+    min-width: 800px;
+}
+
+.navigation-drawer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--accent);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.close-nav {
+    position: absolute;
+    top:50%;
+    margin-left: 0.1em;
+    overflow-x: hidden;
+    transition: 0.5s;
+    color: var(--secondary);
+    background-color: var(--accent);
+}
+
+.nav-menu > li {
+    display: block!important;
+    justify-content: center;
+    align-content: center;
+    margin-left: -2em;
+}
+
+.btn-group-row {
+    display: inline-flex;
+    width: 90%;
+}
+
+.btn-group-row > a, button {
+    margin: 1em;
+}

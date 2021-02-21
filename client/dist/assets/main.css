@@ -9,3 +9,7 @@ a {
     color: var(--secondary);
     text-decoration: none;
 }
+
+form {
+    width: 90%;
+}

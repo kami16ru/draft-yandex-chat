@@ -31,6 +31,10 @@ app.get('/register', function(req, res){
   res.sendFile(path.join(clientPath, '/pages/auth/register.html'));
 });
 
+app.get('/profile', function(req, res){
+  res.sendFile(path.join(clientPath, '/pages/profile/profile.html'));
+});
+
 // Error handlers
 
 app.use(function(req, res, next){

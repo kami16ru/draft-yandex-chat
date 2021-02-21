@@ -1,9 +1,10 @@
 :root {
     --primary: #1A3C5B;
     --secondary: #3369F3;
-    --accent: #E3FFE6;
+    --accent: #e3ffe6;
     --warning: orange;
     --danger: red;
+    --success: #64FFDA;
 }
 
 .primary {
@@ -35,6 +36,12 @@
 }
 .bg-danger {
     background-color: var(--danger)!important;
+}
+.success {
+    color: var(--success)
+}
+.bg-success {
+    background-color: var(--success)!important;
 }
 
 .white {
