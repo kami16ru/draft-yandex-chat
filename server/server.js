@@ -32,7 +32,11 @@ app.get('/register', function(req, res){
 });
 
 app.get('/profile', function(req, res){
-  res.sendFile(path.join(clientPath, '/pages/profile/profile.html'));
+  res.sendFile(path.join(clientPath, '/pages/profile/index.html'));
+});
+
+app.get('/profile/edit', function(req, res){
+  res.sendFile(path.join(clientPath, '/pages/profile/edit.html'));
 });
 
 // Error handlers
