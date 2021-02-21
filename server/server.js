@@ -39,6 +39,10 @@ app.get('/profile/edit', function(req, res){
   res.sendFile(path.join(clientPath, '/pages/profile/edit.html'));
 });
 
+app.get('/profile/edit/password', function(req, res){
+  res.sendFile(path.join(clientPath, '/pages/profile/password.html'));
+});
+
 // Error handlers
 
 app.use(function(req, res, next){

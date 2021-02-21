@@ -36,7 +36,6 @@ function closeNav() {
     document.querySelector(".navigation-drawer").style.width = "64px";
     document.querySelector(".close-nav").style.marginLeft = "0.1em";
 
-    console.log(document.getElementsByClassName("nav-menu-title"))
     for (const elem of document.getElementsByClassName("nav-menu-title")) {
         elem.setAttribute('hidden','true');
     }
@@ -86,4 +85,30 @@ function submitProfileEditForm() {
         loadingElement.style.display = 'none';
         console.log(credentials);
     }, 2000);
+}
+
+function submitProfileEditPasswordForm() {
+    const form = document.getElementById('profile-edit-password-form');
+    const formData = new FormData(form);
+    const password = formData.get('password');
+    const newPwd = formData.get('new-password');
+    const newPwdConfirm = formData.get('new-password-confirm');
+
+    if (newPwd === newPwdConfirm) {
+        const credentials = {
+            password,
+            newPwd,
+            newPwdConfirm,
+        };
+
+        // Show loading spinner
+        submitBtn.style.display = 'none';
+        loadingElement.style.display = '';
+
+        setTimeout(function () {
+            submitBtn.style.display = '';
+            loadingElement.style.display = 'none';
+            console.log(credentials);
+        }, 2000);
+    }
 }
