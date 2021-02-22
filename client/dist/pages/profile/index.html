@@ -37,10 +37,26 @@
     <div class="container">
         <img id="avatar" src="/images/avatar_default.png" alt="аватар" onmouseover="showEditImg()">
         <img id="avatar-change"  src="/images/avatar_change.png" alt="аватар" onmouseleave="hideEditImg()" hidden>
+        <!-- Modal dialog -->
+        <div id="dialog" class="dialog">
+
+            <!-- Dialog content -->
+            <div class="dialog-content bordered">
+                <span class="dialog-close">&times;</span>
+                <div class="card">
+                    <div class="h3 primary">Загрузите файл</div>
+                    <button class="btn-outline">
+                        <a class=" secondary">Выберите файл на компьютере</a>
+                    </button>
+                    <button class="btn bg-primary white">Поменять</button>
+                </div>
+            </div>
+
+        </div>
 
         <div class="break"></div>
 
-        <div class="card profile-card bg-primary accent">
+        <div class="card bordered profile-card bg-primary accent">
             <form id="profile-form" class="form">
                 <div class="form-title h3">Профайл</div>
 
