@@ -1,4 +1,4 @@
-let navCollapsed = true;
+let navCollapsed = false;
 const loadingElement = document.querySelector('.loading');
 const submitBtn = document.querySelector('.submit');
 
@@ -17,7 +17,7 @@ const submitBtn = document.querySelector('.submit');
             document.getElementById(prop).value = profileData[prop];
     }
 
-    document.querySelector(".navigation-drawer").style.width = "64px";
+    document.querySelector(".navigation-drawer").style.width = "250px";
 })();
 
 function openNav() {

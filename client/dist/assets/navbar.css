@@ -1,0 +1,31 @@
+.navigation-drawer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--accent);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.close-nav {
+    position: absolute;
+    top:50%;
+    margin-left: 75%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    color: var(--secondary);
+    background-color: var(--accent);
+}
+
+.nav-menu > li {
+    display: block!important;
+    justify-content: center;
+    align-content: center;
+    margin-left: -2em;
+}

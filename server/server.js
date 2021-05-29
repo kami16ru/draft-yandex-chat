@@ -43,6 +43,10 @@ app.get('/profile/edit/password', function(req, res){
   res.sendFile(path.join(clientPath, '/pages/profile/password.html'));
 });
 
+app.get('/chat', function(req, res){
+  res.sendFile(path.join(clientPath, '/pages/chat/index.html'));
+});
+
 // Error handlers
 
 app.use(function(req, res, next){

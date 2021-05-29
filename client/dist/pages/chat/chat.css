@@ -1,7 +1,8 @@
 @import url('/assets/app.css');
 
 body {
-    background-image: url('/images/profile.png') !important;
+    background-image: url('/images/chat_bg.png') !important;
+    background-color: #09003C;
     background-size: 100%;
     background-attachment: fixed;
 }
