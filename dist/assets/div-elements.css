@@ -23,28 +23,3 @@ div.container {
 .spacer {
     flex-grow: 1!important;
 }
-
-.btn {
-    display: block;
-    width: 80%;
-    border: none;
-    background-color: #FFFFFF;
-    padding: 0.5em 0.5em;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    box-shadow: 0 0 6px #000000;
-    border-radius: 12px;
-}
-
-.btn-outline {
-    display: block;
-    width: 80%;
-    border: none;
-    background-color: transparent;
-    padding: 0.5em 0.5em;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    color: #FFFFFF;
-}
