@@ -8,7 +8,7 @@
 </head>
 <body class="bg-success">
 <main>
-    <div class="navigation-drawer">
+    <div class="nav-drawer">
         <ul class="nav-menu">
             <li>
                 <a href="/">
@@ -42,13 +42,20 @@
     </div>
     <div class="container">
         <img id="avatar" src="/images/avatar_default.png" alt="аватар" onmouseover="showEditImg()">
-        <img id="avatar-change"  src="/images/avatar_change.png" alt="аватар" onmouseleave="hideEditImg()" hidden>
+        <img
+                id="avatar-change"
+                class="dialog-activate"
+                src="/images/avatar_change.png"
+                alt="аватар"
+                onmouseleave="hideEditImg()"
+                hidden
+        >
         <!-- Modal dialog -->
         <div id="dialog" class="dialog">
 
             <!-- Dialog content -->
             <div class="dialog-content bordered">
-                <span class="dialog-close">&times;</span>
+                <span class="dialog-deactivate">&times;</span>
                 <div class="card">
                     <div class="h3 primary">Загрузите файл</div>
                     <button class="btn-outline">
@@ -119,6 +126,7 @@
         </div>
     </div>
 </main>
-<script src="/pages/profile/index.js"></script>
+<script src="/assets/app.js"></script>
+<script src="/pages/profile/profile.js"></script>
 </body>
 </html>

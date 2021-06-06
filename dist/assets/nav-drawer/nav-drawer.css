@@ -1,0 +1,17 @@
+@import url('/assets/nav-drawer/_close/nav-drawer_close.css');
+@import url('/assets/nav-drawer/__menu/nav-drawer__menu.css');
+
+.nav-drawer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--accent);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}

@@ -36,7 +36,31 @@
     </div>
     <div class="container">
         <img id="avatar" src="/images/avatar_default.png" alt="аватар" onmouseover="showEditImg()">
-        <img id="avatar-change"  src="/images/avatar_change.png" alt="аватар" onmouseleave="hideEditImg()" hidden>
+        <img
+                id="avatar-change"
+                class="dialog-activate"
+                src="/images/avatar_change.png"
+                alt="аватар"
+                onmouseleave="hideEditImg()"
+                hidden
+        >
+
+        <!-- Modal dialog -->
+        <div id="dialog" class="dialog">
+
+            <!-- Dialog content -->
+            <div class="dialog-content bordered">
+                <span class="dialog-deactivate">&times;</span>
+                <div class="card">
+                    <div class="h3 primary">Загрузите файл</div>
+                    <button class="btn-outline">
+                        <a class=" secondary">Выберите файл на компьютере</a>
+                    </button>
+                    <button class="btn bg-primary white">Поменять</button>
+                </div>
+            </div>
+
+        </div>
 
         <div class="break"></div>
 
@@ -96,6 +120,8 @@
         </div>
     </div>
 </main>
-<script src="/pages/profile/index.js"></script>
+<script src="/pages/profile/edit/edit.js"></script>
+<script src="/pages/profile/profile.js"></script>
+<script src="/assets/dialog/dialog.js"></script>
 </body>
 </html>

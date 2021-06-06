@@ -4,7 +4,7 @@ const path = require('path');
 
 const app = express();
 const PORT = 3000;
-const clientPath = path.join(__dirname, '../client/dist');
+const clientPath = path.join(__dirname, './dist');
 
 app.use(express.static(clientPath));
 
@@ -32,15 +32,15 @@ app.get('/register', function(req, res){
 });
 
 app.get('/profile', function(req, res){
-  res.sendFile(path.join(clientPath, '/pages/profile/index.html'));
+  res.sendFile(path.join(clientPath, '/pages/profile/profile.html'));
 });
 
 app.get('/profile/edit', function(req, res){
-  res.sendFile(path.join(clientPath, '/pages/profile/edit.html'));
+  res.sendFile(path.join(clientPath, '/pages/profile/edit/edit.html'));
 });
 
 app.get('/profile/edit/password', function(req, res){
-  res.sendFile(path.join(clientPath, '/pages/profile/password.html'));
+  res.sendFile(path.join(clientPath, '/pages/profile/edit/password/password.html'));
 });
 
 app.get('/chat', function(req, res){

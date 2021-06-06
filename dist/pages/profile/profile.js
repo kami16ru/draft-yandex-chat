@@ -1,47 +1,5 @@
-let navCollapsed = false;
 const loadingElement = document.querySelector('.loading');
 const submitBtn = document.querySelector('.submit');
-
-(function fillFormWithTestData() {
-    const profileData = {
-        email: 'example@example.com',
-        login: 'examplelogin',
-        fname: 'Иван',
-        sname: 'Иванов',
-        nickname: 'superhero',
-        phone: '89099999999'
-    };
-
-    for (const prop in profileData) {
-        if (document.getElementById(prop))
-            document.getElementById(prop).value = profileData[prop];
-    }
-
-    document.querySelector(".navigation-drawer").style.width = "250px";
-})();
-
-function openNav() {
-    document.querySelector(".navigation-drawer").style.width = "250px";
-    document.querySelector(".close-nav").style.marginLeft = "75%";
-
-    setTimeout(function () {
-        for (const elem of document.getElementsByClassName("nav-menu-title")) {
-            elem.removeAttribute('hidden');
-        }
-    }, 500);
-    navCollapsed = false;
-}
-
-function closeNav() {
-    document.querySelector(".navigation-drawer").style.width = "64px";
-    document.querySelector(".close-nav").style.marginLeft = "0.1em";
-
-    for (const elem of document.getElementsByClassName("nav-menu-title")) {
-        elem.setAttribute('hidden','true');
-    }
-
-    navCollapsed = true;
-}
 
 function logout() {
     window.location.href = '/';
@@ -110,32 +68,5 @@ function submitProfileEditPasswordForm() {
             loadingElement.style.display = 'none';
             console.log(credentials);
         }, 2000);
-    }
-}
-
-
-// Dialog module
-
-// Get the modal
-const dialog = document.getElementById("dialog");
-
-// Get the button that opens the modal
-const dialogOpen = document.getElementById("avatar-change");
-const dialogClose = document.getElementsByClassName("dialog-close")[0];
-
-// When the user clicks the button, open the modal
-dialogOpen.onclick = function() {
-    dialog.style.display = "flex";
-}
-
-// When the user clicks on <span> (x), close the modal
-dialogClose.onclick = function() {
-    dialog.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target === dialog) {
-        dialog.style.display = "none";
     }
 }
