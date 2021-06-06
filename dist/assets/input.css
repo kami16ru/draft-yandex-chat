@@ -1,10 +1,7 @@
-.input-underlined > input:hover,
 .input-filled > input:hover {
     border-color: var(--secondary);
 }
 
-.input-underlined > input:focus + .input-label,
-.input-underlined > input:valid + .input-label,
 .input-filled > input:focus + .input-label,
 .input-filled > input:valid + .input-label {
     top: 0;
@@ -13,28 +10,13 @@
     color: var(--secondary);
 }
 
-.input-underlined:not(.input-danger) > input:focus + .input-label,
 .input-filled:not(.input-danger) > input:focus + .input-label {
     color: var(--secondary);
 }
 
-.input-underlined:not(.input-danger) > input:focus,
 .input-filled:not(.input-danger) > input:focus {
     border-color: var(--secondary);
 }
-
-/** DISABLED **/
-
-.input-underlined > input:disabled {
-    background: var(--primary);
-    cursor: not-allowed;
-}
-
-.input-underlined > input:disabled + .input-label,
-.input-underlined > input:disabled ~ .input-helper{
-    color: var(--warning);
-}
-
 
 /** DANGER **/
 

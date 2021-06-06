@@ -11,19 +11,29 @@
     <div class="container">
         <div class="card bordered bg-primary accent">
             <form id="login-form" class="form auth-form">
-                <div class="form-title h3">Вход</div>
+                <div class="card__title h3">Вход</div>
 
                 <div class="input-group">
-                    <label class="input-underlined">
-                        <input required id="email" name="email">
+                    <label>
+                        <input
+                                class="input input_underlined"
+                                required
+                                id="email"
+                                name="email"
+                        >
                         <span class="input-label">Email</span>
                         <span class="input-helper">Email пользователя</span>
                     </label>
                 </div>
 
                 <div class="input-group">
-                    <label class="input-underlined">
-                        <input required id="password" name="password">
+                    <label>
+                        <input
+                                class="input input_underlined"
+                                required
+                                id="password"
+                                name="password"
+                        >
                         <span class="input-label">Пароль</span>
                         <span class="input-helper"></span>
                     </label>
@@ -35,7 +45,7 @@
             <button class="btn primary submit" onclick="submitLoginForm()">Авторизоваться</button>
             <img class="loading" style="display: none" src="/images/loading.gif" alt="loading" height="40px">
 
-            <button class="btn-outline">
+            <button class="btn btn_outline">
                 <a class="accent" href="/register">Нет аккаунта?</a>
             </button>
         </div>
