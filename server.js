@@ -40,7 +40,7 @@ app.get('/profile/edit', function(req, res){
 });
 
 app.get('/profile/edit/password', function(req, res){
-  res.sendFile(path.join(clientPath, '/pages/profile/edit/password/password.html'));
+  res.sendFile(path.join(clientPath, '/pages/profile/edit/password/edit-password.html'));
 });
 
 app.get('/chat', function(req, res){

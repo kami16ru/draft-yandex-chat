@@ -8,37 +8,6 @@
 </head>
 <body class="bg-success">
 <main>
-    <div class="nav-drawer">
-        <ul class="nav-drawer__menu">
-            <li>
-                <a href="/">
-                    <span class="mdi mdi-home h1 primary"></span>
-                    <span class="nav-menu-title primary">На главную</span>
-                </a>
-            </li>
-            <li>
-                <a href="/profile">
-                    <span class="mdi mdi-forum-outline h1 secondary"></span>
-                    <span class="nav-menu-title secondary">Профайл</span>
-                </a>
-            </li>
-            <li>
-                <a href="/chat">
-                    <span class="mdi mdi-forum-outline h1 primary"></span>
-                    <span class="nav-menu-title primary">Чат</span>
-                </a>
-            </li>
-            <li>
-                <a href="/">
-                    <span class="mdi mdi-exit-run h1 primary"></span>
-                    <span class="nav-menu-title primary">Выход</span>
-                </a>
-            </li>
-        </ul>
-        <span
-                class="mdi mdi-arrow-expand-horizontal nav-drawer__toggle-icon white display-4"
-        ></span>
-    </div>
     <div class="container">
         <img id="avatar" src="/images/avatar_default.png" alt="аватар" onmouseover="showEditImg()">
         <img
@@ -49,6 +18,7 @@
                 onmouseleave="hideEditImg()"
                 hidden
         >
+
         <!-- Modal dialog -->
         <div id="dialog" class="dialog">
 
