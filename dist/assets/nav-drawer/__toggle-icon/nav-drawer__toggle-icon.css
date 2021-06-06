@@ -1,0 +1,9 @@
+.nav-drawer__toggle-icon {
+    position: absolute;
+    top:50%;
+    margin-left: 75%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    color: var(--secondary);
+    background-color: var(--accent);
+}

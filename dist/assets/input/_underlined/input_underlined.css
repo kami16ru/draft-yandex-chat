@@ -1,0 +1,30 @@
+.input_underlined:hover {
+    border-color: var(--secondary);
+}
+
+.input_underlined:focus + .input-label,
+.input_underlined:valid + .input-label {
+    top: 0;
+    font-size: 0.9375rem;
+    margin-bottom: 32px;
+    color: var(--secondary);
+}
+
+.input_underlined:not(.input_danger):focus + .input-label {
+    color: var(--secondary);
+}
+
+.input_underlined:not(.input_danger):focus {
+    border-color: var(--secondary);
+}
+
+/** DISABLED **/
+
+.input_underlined:disabled {
+    background: var(--primary);
+    cursor: not-allowed;
+}
+.input_underlined:disabled + .input-label,
+.input_underlined:disabled ~ .input-helper{
+    color: var(--warning);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Yandex chat app | Вход в систему</title>
+
+    <link rel="stylesheet" href="/pages/auth/login/login.css">
+</head>
+<body>
+<main>
+    <div class="container">
+        <div class="card bordered bg-primary accent">
+            <form id="login-form" class="form auth-form">
+                <div class="card__title h3">Вход</div>
+
+                <div class="input-group">
+                    <label>
+                        <input
+                                class="input input_underlined"
+                                required
+                                id="email"
+                                name="email"
+                        >
+                        <span class="input-label">Email</span>
+                        <span class="input-helper">Email пользователя</span>
+                    </label>
+                </div>
+
+                <div class="input-group">
+                    <label>
+                        <input
+                                class="input input_underlined"
+                                required
+                                id="password"
+                                name="password"
+                        >
+                        <span class="input-label">Пароль</span>
+                        <span class="input-helper"></span>
+                    </label>
+                </div>
+            </form>
+
+            <div class="spacer"></div>
+
+            <button class="btn primary submit" onclick="submitLoginForm()">Авторизоваться</button>
+            <img class="loading" style="display: none" src="/images/loading.gif" alt="loading" height="40px">
+
+            <button class="btn btn_outline">
+                <a class="accent" href="/register">Нет аккаунта?</a>
+            </button>
+        </div>
+    </div>
+    <img class="livechat-image" src="/images/livechat.png"  alt="Live Chat"/>
+</main>
+<script src="/pages/auth/login/login.js"></script>
+</body>
+</html>

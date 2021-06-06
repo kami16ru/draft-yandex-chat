@@ -1,0 +1,6 @@
+.nav-drawer__menu > li {
+    display: block!important;
+    justify-content: center;
+    align-content: center;
+    margin-left: -2em;
+}

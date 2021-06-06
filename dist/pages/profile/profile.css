@@ -1,0 +1,9 @@
+@import url('/assets/app.css');
+@import url('components/__profile-card/profile__profile-card.css');
+
+
+body {
+    background-image: url('/images/profile.png') !important;
+    background-size: 100%;
+    background-attachment: fixed;
+}

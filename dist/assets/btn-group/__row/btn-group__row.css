@@ -1,0 +1,8 @@
+.btn-group__row {
+    display: inline-flex;
+    width: 90%;
+}
+
+.btn-group__row > a, button {
+    margin: 1em;
+}

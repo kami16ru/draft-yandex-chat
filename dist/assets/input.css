@@ -1,0 +1,33 @@
+.input-filled > input:hover {
+    border-color: var(--secondary);
+}
+
+.input-filled > input:focus + .input-label,
+.input-filled > input:valid + .input-label {
+    top: 0;
+    font-size: 0.9375rem;
+    margin-bottom: 32px;
+    color: var(--secondary);
+}
+
+.input-filled:not(.input-danger) > input:focus + .input-label {
+    color: var(--secondary);
+}
+
+.input-filled:not(.input-danger) > input:focus {
+    border-color: var(--secondary);
+}
+
+/** DANGER **/
+
+.input-underlined.input-danger > .input-label, .input-underlined.input-danger > .input-helper,
+.input-filled.input-danger > .input-label, .input-filled.input-danger > .input-helper{
+    color: var(--danger);
+}
+
+.input-danger > input {
+    border-color: var(--danger);
+}
+.input-filled > input {
+    background: var(--omrs-color-bg-low-contrast);
+}
