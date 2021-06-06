@@ -1,5 +1,5 @@
 @import url('/assets/app.css');
 
-#login-form {
+.auth-form {
     height: 400px!important;
 }

@@ -24,11 +24,11 @@ app.get('/500', function(req, res){
 });
 
 app.get('/login', function(req, res){
-  res.sendFile(path.join(clientPath, '/pages/auth/login.html'));
+  res.sendFile(path.join(clientPath, '/pages/auth/login/login.html'));
 });
 
 app.get('/register', function(req, res){
-  res.sendFile(path.join(clientPath, '/pages/auth/register.html'));
+  res.sendFile(path.join(clientPath, '/pages/auth/register/register.html'));
 });
 
 app.get('/profile', function(req, res){
