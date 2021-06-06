@@ -43,7 +43,7 @@
         <img id="avatar" src="/images/avatar_default.png" alt="аватар" onmouseover="showEditImg()">
         <img
                 id="avatar-change"
-                class="dialog-activate"
+                class="dialog_activator"
                 src="/images/avatar_change.png"
                 alt="аватар"
                 onmouseleave="hideEditImg()"
@@ -53,8 +53,8 @@
         <div id="dialog" class="dialog">
 
             <!-- Dialog content -->
-            <div class="dialog-content bordered">
-                <span class="dialog-deactivate">&times;</span>
+            <div class="dialog__content bordered">
+                <span class="dialog__close-icon">&times;</span>
                 <div class="card">
                     <div class="h3 primary">Загрузите файл</div>
                     <button class="btn-outline">
@@ -127,5 +127,6 @@
 </main>
 <script src="/assets/app.js"></script>
 <script src="/pages/profile/profile.js"></script>
+<script src="/pages/profile/content.js"></script>
 </body>
 </html>

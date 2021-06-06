@@ -4,8 +4,8 @@
 const dialog = document.getElementById("dialog");
 
 // Get the button that opens the modal
-const dialogOpen = document.getElementsByClassName("dialog-activate")[0];
-const dialogClose = document.getElementsByClassName("dialog-deactivate")[0];
+const dialogOpen = document.querySelector('.dialog_activator');
+const dialogClose = document.querySelector('.dialog__close-icon');
 
 // When the user clicks the button, open the modal
 dialogOpen.onclick = function() {
