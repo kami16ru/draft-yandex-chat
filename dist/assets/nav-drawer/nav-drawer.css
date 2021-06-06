@@ -1,11 +1,12 @@
-@import url('/assets/nav-drawer/_close/nav-drawer_close.css');
+@import url('/assets/nav-drawer/__toggle-icon/nav-drawer__toggle-icon.css');
 @import url('/assets/nav-drawer/__menu/nav-drawer__menu.css');
+@import url('/assets/nav-drawer/_collapsed/nav-drawer_collapsed.css');
 
 .nav-drawer {
     display: flex;
     flex-wrap: wrap;
     height: 100%;
-    width: 0;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;

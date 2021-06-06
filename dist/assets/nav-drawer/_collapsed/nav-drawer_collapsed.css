@@ -1,0 +1,7 @@
+.nav-drawer_collapsed {
+    width: 64px!important;
+}
+
+.nav-drawer__toggle-icon_collapsed {
+    margin-left: 0.1em!important;
+}

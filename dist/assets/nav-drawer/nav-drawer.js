@@ -1,10 +1,20 @@
 let navCollapsed = false;
 
-document.querySelector('.nav-drawer').style.width = '250px';
+const navDrawer = document.querySelector('.nav-drawer');
+const navDrawerToggle = document.querySelector('.nav-drawer__toggle-icon');
+
+navDrawerToggle.onclick = function() {
+  toggleNavDrawer();
+}
+
+function toggleNavDrawer() {
+  navCollapsed ? openNav() : closeNav();
+}
 
 function openNav() {
-  document.querySelector('.nav-drawer').style.width = '250px';
-  document.querySelector('.nav-drawer_close').style.marginLeft = '75%';
+  // navDrawer.style.width = '250px';
+  navDrawer.classList.remove('nav-drawer_collapsed');
+  navDrawerToggle.classList.remove('nav-drawer__toggle-icon_collapsed');
 
   setTimeout(function () {
     for (const elem of document.getElementsByClassName('nav-menu-title')) {
@@ -15,8 +25,8 @@ function openNav() {
 }
 
 function closeNav() {
-  document.querySelector('.nav-drawer').style.width = '64px';
-  document.querySelector('.nav-drawer_close').style.marginLeft = '0.1em';
+  navDrawer.classList.add('nav-drawer_collapsed');
+  navDrawerToggle.classList.add('nav-drawer__toggle-icon_collapsed');
 
   for (const elem of document.getElementsByClassName('nav-menu-title')) {
     elem.setAttribute('hidden','true');
