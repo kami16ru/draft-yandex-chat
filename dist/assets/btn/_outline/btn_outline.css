@@ -1,11 +1,5 @@
 .btn_outline {
-    display: block;
-    width: 80%;
-    border: none;
-    background-color: transparent;
-    padding: 0.5em 0.5em;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    color: #FFFFFF;
+    background-color: transparent!important;
+    box-shadow: none!important;
+    border-radius: unset!important;
 }
