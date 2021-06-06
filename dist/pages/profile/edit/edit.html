@@ -8,6 +8,7 @@
 </head>
 <body class="bg-success">
 <main>
+    <!-- Navigation drawer -->
     <div class="nav-drawer">
         <ul class="nav-drawer__menu">
             <li>
@@ -40,7 +41,12 @@
         ></span>
     </div>
     <div class="container">
-        <img id="avatar" src="/images/avatar_default.png" alt="аватар" onmouseover="showEditImg()">
+        <img
+                id="avatar"
+                src="/images/avatar_default.png"
+                alt="аватар"
+                onmouseover="showEditImg()"
+        >
         <img
                 id="avatar-change"
                 class="dialog_activator"
@@ -119,8 +125,18 @@
             <div class="spacer"></div>
 
             <div style="text-align: center">
-                <button class="btn primary submit" onclick="submitProfileEditForm()" style="width: 400px">Сохранить</button>
-                <img class="loading mx-auto" style="display: none;" src="/images/loading.gif" alt="loading" height="40px">
+                <button
+                        class="btn primary submit"
+                        onclick="submitProfileEditForm()"
+                        style="width: 400px"
+                >Сохранить</button>
+                <img
+                        class="loading mx-auto"
+                        style="display: none;"
+                        src="/images/loading.gif"
+                        alt="loading"
+                        height="40px"
+                >
             </div>
         </div>
     </div>
