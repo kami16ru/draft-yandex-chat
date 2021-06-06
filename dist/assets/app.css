@@ -2,7 +2,6 @@
 @import url('/assets/images.css');
 @import url('/assets/theme.css');
 @import url('/assets/typography.css');
-/*@import url('/assets/input.css');*/
 @import url('/assets/alignment.css');
 @import url('/assets/dialog/dialog.css');
 @import url('/assets/nav-drawer/nav-drawer.css');
@@ -14,3 +13,5 @@
 @import url('/assets/input/input.css');
 @import url('/assets/modifiers/modifiers.css');
 @import url('/assets/container/container.css');
+
+@import url('/assets/input.css');
