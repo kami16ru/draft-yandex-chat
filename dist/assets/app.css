@@ -2,7 +2,7 @@
 @import url('/assets/images.css');
 @import url('/assets/theme.css');
 @import url('/assets/typography.css');
-@import url('/assets/input.css');
+/*@import url('/assets/input.css');*/
 @import url('/assets/alignment.css');
 @import url('/assets/div-elements.css');
 @import url('/assets/dialog/dialog.css');
@@ -12,3 +12,4 @@
 @import url('/assets/btn/btn.css');
 @import url('/assets/spacer/spacer.css');
 @import url('/assets/input-group/input-group.css');
+@import url('/assets/input/input.css');

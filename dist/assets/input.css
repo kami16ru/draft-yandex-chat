@@ -1,35 +1,3 @@
-/* Input*/
-.input-readonly > input,
-.input-underlined > input,
-.input-filled > input {
-    border: none;
-    border-bottom: 0.125rem solid var(--secondary);
-    width: 100%;
-    height: 2rem;
-    font-size: 1.0625rem;
-    line-height: 147.6%;
-    padding-top: 0.825rem;
-    padding-bottom: 0.5rem;
-    color: white;
-}
-
-.input-readonly > input:focus,
-.input-underlined > input:focus,
-.input-filled > input:focus {
-    outline: none;
-}
-
-.input-readonly > .input-label,
-.input-underlined > .input-label,
-.input-filled > .input-label {
-    position: absolute;
-    top: 0.9375rem;
-    left: 0.875rem;
-    line-height: 147.6%;
-    color: var(--accent);
-    transition: top .2s;
-}
-
 .input-readonly > .input-helper,
 .input-underlined > .input-helper,
 .input-filled > .input-helper {
@@ -87,15 +55,6 @@
 .input-danger > input {
     border-color: var(--danger);
 }
-
-.input-readonly > input,
-.input-underlined > input {
-    background: transparent;
-}
 .input-filled > input {
     background: var(--omrs-color-bg-low-contrast);
-}
-
-.input-readonly > input {
-    text-align: right;
 }
