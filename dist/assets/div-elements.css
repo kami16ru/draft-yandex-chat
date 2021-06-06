@@ -13,9 +13,3 @@ div.container {
     box-shadow: 0 0 6px #000000;
     border-radius: 12px;
 }
-
-.form-title {
-    text-align: center !important;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}

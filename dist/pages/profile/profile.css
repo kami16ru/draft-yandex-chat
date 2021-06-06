@@ -1,5 +1,5 @@
 @import url('/assets/app.css');
-@import url('./profile__profile-card.css');
+@import url('components/__profile-card/profile__profile-card.css');
 
 
 body {

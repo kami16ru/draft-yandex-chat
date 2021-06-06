@@ -1,3 +1,5 @@
+@import url('./__title/card__title.css');
+
 .card {
     position: relative;
     display: -webkit-box;
