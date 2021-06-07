@@ -5,7 +5,9 @@
   "main": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon -r esm server.js"
+    "dev": "nodemon -r esm server.js",
+    "start": "parcel static/index.html",
+    "build": "parcel build ./static/*.html"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,8 @@
   "homepage": "https://github.com/kami16ru/yandex-chat#readme",
   "devDependencies": {
     "express": "^4.17.1",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
     "esm": "^3.2.25"
