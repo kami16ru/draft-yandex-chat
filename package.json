@@ -27,6 +27,7 @@
     "parcel": "^2.0.0-beta.2"
   },
   "dependencies": {
+    "eslint": "^7.28.0",
     "esm": "^3.2.25"
   }
 }
