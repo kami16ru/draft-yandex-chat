@@ -2,10 +2,11 @@
   "name": "yandex-chat",
   "version": "0.1.0",
   "description": "yandex praktikum chat project",
-  "main": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon -r esm server.js"
+    "dev": "nodemon -r esm server.js",
+    "start": "npm run build & nodemon -r esm server.js",
+    "build": "parcel build ./static/*.html"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,8 @@
   "homepage": "https://github.com/kami16ru/yandex-chat#readme",
   "devDependencies": {
     "express": "^4.17.1",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "parcel": "^2.0.0-beta.2"
   },
   "dependencies": {
     "esm": "^3.2.25"
