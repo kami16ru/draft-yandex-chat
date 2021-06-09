@@ -1,0 +1,12 @@
+.page {
+  display: flex;
+
+  &__aside {
+    width: 310px;
+    flex-shrink: 0;
+  }
+
+  &__content {
+    width: 100%
+  }
+}

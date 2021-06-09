@@ -7,7 +7,7 @@
     "serve": "nodemon -r esm server.js",
     "dev": "npm run build & npm run serve",
     "build": "parcel build ./static/*.html",
-    "start": "parcel ./static/*.html & nodemon -r esm ./server.js"
+    "start": "parcel ./src/tpl/pages/ChatPage.pug & nodemon -r esm ./server.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/kami16ru/yandex-chat#readme",
   "devDependencies": {
+    "@parcel/transformer-pug": "^2.0.0-beta.2",
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
     "express": "^4.17.1",
     "nodemon": "^2.0.7",
     "parcel": "^2.0.0-beta.2"
