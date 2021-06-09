@@ -1,16 +1,13 @@
+include ./navigation
+
 append styles
   link(href="../../components/nav-drawer/nav-drawer.scss" rel="stylesheet")
-
-- const items = [
-- { href: '/', icon: 'mdi-home-outline', text: 'На главную' },
-- { href: '/profile', icon: 'mdi-account-outline', text: 'Профайл' },
-- { href: '/chat', icon: 'mdi-forum-outline', text: 'Чат' },
-- { href: '/', icon: 'mdi-exit-run', text: 'Выход' }]
 
 div.nav-drawer
   ul.nav-drawer__menu
     block nav-drawer__menu
-      each item in items
+
+      each item in navItems
         li.nav-drawer__menu__item
           a(href=item.href)
             div
