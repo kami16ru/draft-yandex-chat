@@ -110,4 +110,4 @@ module.exports = {
     // Prefer using arrow functions for callbacks
     'prefer-arrow-callback': 1,
   },
-}
+};

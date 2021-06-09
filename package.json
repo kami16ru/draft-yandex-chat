@@ -4,9 +4,10 @@
   "description": "yandex praktikum chat project",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon -r esm server.js",
-    "start": "npm run build & nodemon -r esm server.js",
-    "build": "parcel build ./static/*.html"
+    "serve": "nodemon -r esm server.js",
+    "dev": "npm run build & npm run serve",
+    "build": "parcel build ./static/*.html",
+    "start": "parcel ./static/*.html & nodemon -r esm ./server.js"
   },
   "repository": {
     "type": "git",
