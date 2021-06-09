@@ -3,7 +3,7 @@
   height: 100vh;
 
   &__aside {
-    background-color: #E3FFE6;
+    background-color: var(--accent);
     width: 310px;
     flex-shrink: 0;
     border-right: solid 1px #eaeaea;

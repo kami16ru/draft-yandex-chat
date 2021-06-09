@@ -1,0 +1,18 @@
+append styles
+  link(href="../../components/nav-drawer/nav-drawer.scss" rel="stylesheet")
+
+- const items = [
+- { href: '/', icon: 'mdi-home-outline', text: 'На главную' },
+- { href: '/profile', icon: 'mdi-account-outline', text: 'Профайл' },
+- { href: '/chat', icon: 'mdi-forum-outline', text: 'Чат' },
+- { href: '/', icon: 'mdi-exit-run', text: 'Выход' }]
+
+div.nav-drawer
+  ul.nav-drawer__menu
+    block nav-drawer__menu
+      each item in items
+        li.nav-drawer__menu__item
+          a(href=item.href)
+            div
+              span(class="nav-drawer__menu__item__icon mdi " + item.icon + " h1")
+              span(class="nav-drawer__menu__item__content")= item.text

@@ -1,0 +1,56 @@
+:root {
+    --primary: #1A3C5B;
+    --secondary: #3369F3;
+    --accent: #e3ffe6;
+    --warning: orange;
+    --danger: red;
+    --success: #64FFDA;
+}
+
+$primary: var(--primary);
+$secondary: var(--secondary);
+$accent: var(--accent);
+$warning: var(--warning);
+$danger: var(--danger);
+$success: var(--success);
+
+.primary {
+    color: $primary;
+}
+.bg-primary {
+    background-color: $primary!important;
+}
+.secondary {
+    color: $secondary;
+}
+.bg-secondary {
+    background-color: $secondary!important;
+}
+.accent {
+    color: $accent;
+}
+.bg-accent {
+    background-color: $accent!important;
+}
+.warning {
+    color: $warning
+}
+.bg-warning {
+    background-color: $warning!important;
+}
+.danger {
+    color: $danger
+}
+.bg-danger {
+    background-color: $danger!important;
+}
+.success {
+    color: $success
+}
+.bg-success {
+    background-color: $success!important;
+}
+
+.white {
+    color: white;
+}
