@@ -7,7 +7,7 @@
     "serve": "nodemon -r esm server.js",
     "dev": "npm run build & npm run serve",
     "build": "parcel build ./static/*.html",
-    "start": "parcel ./src/tpl/pages/ChatPage.pug & nodemon -r esm ./server.js"
+    "start": "parcel src/tpl/pages/chat/ChatPage.pug & nodemon -r esm ./server.js"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,19 @@
+.page {
+  display: flex;
+  height: 100vh;
+
+  &__aside {
+    background-color: #E3FFE6;
+    width: 310px;
+    flex-shrink: 0;
+    border-right: solid 1px #eaeaea;
+  }
+
+  &__content {
+    background-image: url('../../../assets/images/chat_bg.png') !important;
+    background-color: #1A3C5B;
+    background-size: 100%;
+    background-attachment: fixed;
+    width: 100%;
+  }
+}
