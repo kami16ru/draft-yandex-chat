@@ -2,10 +2,12 @@ extends ../../layout/chat
 
 block styles
   link(href="../../components/page/page.scss" rel="stylesheet")
+  link(href="../../components/nav-drawer/nav-drawer.scss" rel="stylesheet")
 
 block main
   section.page
     aside.page__aside
-      include ../nav-drawer/nav-drawer
+      block aside
+        include ../../components/nav-drawer/nav-drawer
     div.page__content
       block content

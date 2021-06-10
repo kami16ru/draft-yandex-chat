@@ -1,0 +1,20 @@
+include ../../../mixins/icon
+
+prepend styles
+  link(href="../../pages/chat/components/chat__channel-list.scss" rel="stylesheet")
+
+div.chat__channel-list__header
+  a(href="/")
+    div
+      span.chat__channel-list__header__text= "Профиль"
+      span.chat__channel-list__header__icon
+        +icon('corner-right')
+div.nav-drawer
+  ul.nav-drawer__menu
+    include ./channelList.util.pug
+      each item in channelList
+        li.nav-drawer__menu__item
+          a(href=item.href)
+            div
+              span(class="nav-drawer__menu__item__icon mdi " + item.icon + " h1")
+              span(class="nav-drawer__menu__item__content")= item.text
